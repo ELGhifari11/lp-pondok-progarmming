@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="32" fill="rgba(15,23,42,0.95)" />
+  <rect x="32" y="32" width="416" height="256" rx="28" fill="url(#grad)" opacity="0.4" />
+  <rect x="80" y="80" width="320" height="160" rx="24" fill="rgba(2,6,23,0.85)" stroke="#39FF14" stroke-opacity="0.45" stroke-width="3" />
+  <text x="50%" y="55%" text-anchor="middle" fill="#e2e8f0" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="36">Immersive Web</text>
+</svg>
