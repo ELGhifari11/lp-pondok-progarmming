@@ -1,26 +1,34 @@
 export const services = [
   {
-    title: 'Neon Product Strategy',
+    title: 'Foundations Sprint',
+    duration: 'Minggu 1-4',
     description:
-      'Collaborative sprints to define product vision, user flows, and success metrics for futuristic digital products.',
-    icon: '🚀',
+      'Pelajari mindset product thinking, riset pengguna, dan problem framing. Kamu akan menyusun UX research plan dan stakeholder map.',
+    outcomes: ['UX Research Blueprint', 'User Persona & Journey Map', 'Problem Prioritization Framework'],
+    level: 'Beginner Friendly',
   },
   {
-    title: 'Immersive Web Experiences',
+    title: 'Experience Lab',
+    duration: 'Minggu 5-8',
     description:
-      'React and WebGL powered interfaces with cinematic motion and accessibility baked in from the start.',
-    icon: '✨',
+      'Eksplorasi ide, wireframing, prototyping, dan usability testing secara iteratif dengan feedback mentor.',
+    outcomes: ['High-Fidelity Prototype', 'Usability Report', 'Design Critique Session'],
+    level: 'Intermediate',
   },
   {
-    title: 'AI-Augmented Systems',
+    title: 'Visual System Studio',
+    duration: 'Minggu 9-10',
     description:
-      'Integrate generative AI, automation, and intelligent data pipelines tailored to your operations.',
-    icon: '🧠',
+      'Bangun visual language, micro-interaction, dan design system siap produksi menggunakan Figma components.',
+    outcomes: ['UI Kit & Tokens', 'Interaction Specs', 'Design Handoff File'],
+    level: 'Advanced',
   },
   {
-    title: 'Brand & Identity Systems',
+    title: 'Career Accelerator',
+    duration: 'Minggu 11-12',
     description:
-      'Craft cohesive, multisensory brand systems that thrive in dark UI environments and XR surfaces.',
-    icon: '🎨',
+      'Refine portfolio, storytelling, dan interview simulation dengan mentor yang berpengalaman sebagai hiring manager.',
+    outcomes: ['Case Study Portfolio', 'Pitch Deck', 'Mock Interview Feedback'],
+    level: 'Career Boost',
   },
 ];

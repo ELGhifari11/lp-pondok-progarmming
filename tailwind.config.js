@@ -4,21 +4,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        'neon-300': '#7DFF8C',
-        'neon-400': '#5BFF5E',
-        'neon-500': '#39FF14',
-        'neon-600': '#23CC0C',
+        brand: {
+          100: '#ECE8FF',
+          200: '#D7CEFF',
+          300: '#BBA6FF',
+          400: '#8F74FF',
+          500: '#6C4DFF',
+          600: '#4C2FD4',
+        },
+        midnight: '#050213',
+        'surface-900': '#08051C',
+        accent: '#FFB356',
+        skyglow: '#38BDF8',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        glass: '0 20px 45px -20px rgba(57, 255, 20, 0.45)',
+        brand: '0 30px 70px -30px rgba(143, 116, 255, 0.6)',
+        glow: '0 0 0 1px rgba(255, 255, 255, 0.05)',
       },
       backgroundImage: {
-        'grid-neon':
-          'linear-gradient(rgba(57, 255, 20, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(57, 255, 20, 0.08) 1px, transparent 1px)',
+        'grid-brand':
+          'radial-gradient(circle at top left, rgba(143, 116, 255, 0.14), transparent 55%), radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.12), transparent 60%)',
+        'hero-radial':
+          'radial-gradient(80% 80% at 16% 10%, rgba(143, 116, 255, 0.55), transparent 75%), radial-gradient(80% 80% at 86% 80%, rgba(56, 189, 248, 0.45), transparent 72%)',
       },
       backdropBlur: {
         xl: '28px',
@@ -26,6 +37,7 @@ export default {
       animation: {
         float: 'float 12s ease-in-out infinite',
         pulseGlow: 'pulseGlow 3s ease-in-out infinite',
+        slowSpin: 'slowSpin 20s linear infinite',
       },
       keyframes: {
         float: {
@@ -33,8 +45,12 @@ export default {
           '50%': { transform: 'translateY(-12px)' },
         },
         pulseGlow: {
-          '0%, 100%': { boxShadow: '0 0 0 rgba(57, 255, 20, 0.5)' },
-          '50%': { boxShadow: '0 0 30px rgba(57, 255, 20, 0.35)' },
+          '0%, 100%': { boxShadow: '0 0 0 rgba(143, 116, 255, 0.5)' },
+          '50%': { boxShadow: '0 0 35px rgba(143, 116, 255, 0.35)' },
+        },
+        slowSpin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       },
     },
@@ -43,16 +59,16 @@ export default {
     function ({ addUtilities }) {
       const newUtilities = {
         '.glass-dark': {
-          background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.65))',
-          border: '1px solid rgba(148, 163, 184, 0.15)',
-          boxShadow: '0 30px 60px -25px rgba(15, 23, 42, 0.8)',
-          backdropFilter: 'blur(24px)',
+          background: 'linear-gradient(135deg, rgba(8, 5, 28, 0.92), rgba(10, 6, 30, 0.72))',
+          border: '1px solid rgba(143, 116, 255, 0.16)',
+          boxShadow: '0 40px 70px -35px rgba(8, 5, 28, 0.9)',
+          backdropFilter: 'blur(28px)',
         },
         '.text-glow': {
-          textShadow: '0 0 18px rgba(57, 255, 20, 0.45)',
+          textShadow: '0 0 22px rgba(143, 116, 255, 0.6)',
         },
-        '.border-neon': {
-          borderImage: 'linear-gradient(135deg, rgba(57,255,20,0.45), rgba(148,163,184,0.2)) 1',
+        '.border-brand': {
+          borderImage: 'linear-gradient(135deg, rgba(143, 116, 255, 0.65), rgba(56, 189, 248, 0.2)) 1',
         },
       };
       addUtilities(newUtilities);

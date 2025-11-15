@@ -1,27 +1,23 @@
-import aiCard from '../assets/portfolio-ai.svg';
-import webCard from '../assets/portfolio-web.svg';
-import brandCard from '../assets/portfolio-brand.svg';
-
 export const portfolioItems = [
   {
-    title: 'NeonX Dashboard',
+    title: 'Discovery & Strategy',
+    weeks: 'Minggu 1-4',
     description:
-      'A realtime analytics cockpit for autonomous retail, blending volumetric data visuals with glassmorphic controls.',
-    image: aiCard,
-    tags: ['AI', 'Analytics', 'WebGL'],
+      'Melakukan user research, audit produk, dan menyusun opportunity backlog. Kamu akan menyajikan insight ke mentor layaknya product review mingguan.',
+    deliverables: ['User Research Readout', 'Problem Statement', 'Prioritization Matrix'],
   },
   {
-    title: 'Astral Commerce',
+    title: 'Experience Exploration',
+    weeks: 'Minggu 5-8',
     description:
-      'Cross-device ecommerce platform with adaptive storytelling, neon gradients, and dynamic product choreography.',
-    image: webCard,
-    tags: ['Ecommerce', 'Storytelling', 'Responsive'],
+      'Eksplorasi ide melalui design sprint, prototyping interaktif, dan usability testing. Fokus pada iterasi cepat berdasarkan feedback real user.',
+    deliverables: ['Wireframe Library', 'Usability Report', 'Interactive Prototype'],
   },
   {
-    title: 'Flux Identity System',
+    title: 'Launch Readiness',
+    weeks: 'Minggu 9-12',
     description:
-      'A modular identity suite with generative logo system, typography guidelines, and sonic signatures.',
-    image: brandCard,
-    tags: ['Branding', 'Design Systems', 'Motion'],
+      'Membuat design system, motion guideline, dan handoff document siap developer. Kamu akan melakukan final critique bersama panel mentor.',
+    deliverables: ['Design System Starter', 'Interaction Spec', 'Portfolio Case Study'],
   },
 ];
